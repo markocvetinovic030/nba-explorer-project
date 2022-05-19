@@ -1,0 +1,101 @@
+@import "vars";
+@import "mixin";
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: $black;
+}
+
+header {
+    padding: 30px 0px 25px 0px;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+
+    .flexbox {
+        display: flex;
+        justify-content: space-between;
+
+        nav {
+            width: 600px;
+            padding: 6px 0px;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                        padding-bottom: 7px;
+                        font-weight: bold;
+
+                        &:hover {
+                            border-bottom: 1px solid white;
+                            transition: 5s all;
+                        }
+                    }
+                }
+            }
+        }
+
+        #modal {
+            button {
+                border: none;
+                border-radius: 10px;
+                padding: 8px 30px;
+                margin-top: 3px;
+                font-size: 15px;
+                font-weight: bold;
+                background-color: $red;
+                color: white;
+            }
+        }
+    }
+}
+
+main {
+    width: 100%;
+    #center {
+        padding-top: 350px;
+        text-align: center;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        h1 {
+            color: white;
+            padding-top: 50px;
+            font-size: 2rem;
+        }
+
+        p {
+            max-width: 500px;
+            color: white;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        a {
+
+            img {
+                width: 30px;
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+#test {
+    padding: 1000px;
+    background-color: $red;
+    margin-top: 1000px;
+}
